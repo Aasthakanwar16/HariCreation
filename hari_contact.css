@@ -1,0 +1,182 @@
+/* Navbar Styles */
+nav {
+  display: flex;
+  flex-direction: column; /* Mobile में links नीचे दिखेंगे */
+  align-items: center;
+  background:rgb(222, 41, 116);
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Logo & Title */
+.navbar h1 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  margin: 10;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Nav Menu */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav Items */
+nav ul li {
+  margin: 0 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: yellow;
+}
+
+/* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+      flex-direction: column; /* Mobile में navbar items नीचे आ जाएंगे */
+      text-align: center;
+      padding: 10px;
+  }
+
+  .navbar h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      display: block;
+      font-size: 18px;
+      width: 100%;
+      padding: 10px 0;
+  }
+}
+/* Contact Form Container */
+.contact-container {
+  background: linear-gradient(135deg, #ffffff, #e3f2fd);
+  padding: 170px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* Smooth Hover Effect */
+.contact-container:hover {
+  transform: scale(1.02);
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Subheading (Question) */
+.question {
+  font-size: 18px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  display: block;
+  text-align: left;
+  margin: 12px 0 5px;
+  color: #444;
+  font-size: 15px;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+  background: #f8f9fa;
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  background: white;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff6b6b, #ff4757);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(255, 71, 87, 0.3);
+}
+
+/* Button Hover Effect */
+button:hover {
+  background: linear-gradient(135deg, #ff4757, #e84118);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 71, 87, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .contact-container {
+    padding: 30px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .question {
+    font-size: 16px;
+  }
+}
